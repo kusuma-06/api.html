@@ -1,0 +1,183 @@
+CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Health Monitoring and Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brain Health Monitoring and Analysis</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#cognitive-test">Cognitive Function Test Submission</a></li>
+            <li><a href="#decline-risk">Cognitive Decline Risk Assessment</a></li>
+            <li><a href="#brain-score">Brain Health Score Calculation</a></li>
+            <li><a href="#mental-fatigue">Mental Fatigue Monitoring</a></li>
+            <li><a href="#sleep-analysis">Sleep and Brain Health Correlation Analysis</a></li>
+            <li><a href="#mood-tracking">Mood and Cognitive Function Tracking</a></li>
+            <li><a href="#interventions">Brain Health Intervention Suggestions</a></li>
+            <li><a href="#decline-alerts">Brain Health Decline Alerts</a></li>
+            <li><a href="#age-comparison">Brain Health for Age Group Comparison</a></li>
+            <li><a href="#neuroplasticity">Neuroplasticity Enhancement Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="cognitive-test">
+            <h2>Cognitive Function Test Submission</h2>
+            <form action="/brain-health/cognitive-test" method="POST">
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" name="user_id" required>
+                
+                <label for="test-type">Test Type:</label>
+                <select id="test-type" name="test_type" required>
+                    <option value="memory">Memory</option>
+                    <option value="attention">Attention</option>
+                    <option value="problem-solving">Problem Solving</option>
+                </select>
+                
+                <label for="test-score">Test Score:</label>
+                <input type="number" id="test-score" name="test_score" required>
+                
+                <label for="time-taken">Time Taken (in seconds):</label>
+                <input type="number" id="time-taken" name="time_taken" required>
+                
+                <button type="submit">Submit Test</button>
+            </form>
+        </section>
+
+        <section id="decline-risk">
+            <h2>Cognitive Decline Risk Assessment</h2>
+            <form action="/brain-health/decline-risk" method="POST">
+                <label for="user-id-risk">User ID:</label>
+                <input type="text" id="user-id-risk" name="user_id" required>
+                
+                <label for="lifestyle-factors">Lifestyle Factors (diet, exercise):</label>
+                <textarea id="lifestyle-factors" name="lifestyle_factors" required></textarea>
+                
+                <label for="medical-history">Medical History:</label>
+                <textarea id="medical-history" name="medical_history" required></textarea>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="family-history">Family History:</label>
+                <textarea id="family-history" name="family_history" required></textarea>
+                
+                <button type="submit">Assess Risk</button>
+            </form>
+        </section>
+
+        <section id="brain-score">
+            <h2>Brain Health Score Calculation</h2>
+            <form action="/brain-health/score" method="GET">
+                <label for="user-id-score">User ID:</label>
+                <input type="text" id="user-id-score" name="user_id" required>
+                
+                <label for="mental-health-data">Mental Health Data:</label>
+                <textarea id="mental-health-data" name="mental_health_data" required></textarea>
+                
+                <label for="cognitive-scores">Cognitive Test Scores:</label>
+                <textarea id="cognitive-scores" name="cognitive_test_scores" required></textarea>
+                
+                <label for="sleep-patterns">Sleep Patterns:</label>
+                <textarea id="sleep-patterns" name="sleep_patterns" required></textarea>
+                
+                <label for="stress-levels">Stress Levels:</label>
+                <textarea id="stress-levels" name="stress_levels" required></textarea>
+                
+                <button type="submit">Calculate Score</button>
+            </form>
+        </section>
+
+        <section id="mental-fatigue">
+            <h2>Mental Fatigue Monitoring</h2>
+            <form action="/brain-health/mental-fatigue" method="GET">
+                <label for="user-id-fatigue">User ID:</label>
+                <input type="text" id="user-id-fatigue" name="user_id" required>
+                
+                <label for="daily-activity">Daily Activity Levels:</label>
+                <textarea id="daily-activity" name="daily_activity_levels" required></textarea>
+                
+                <label for="cognitive-results">Cognitive Test Results:</label>
+                <textarea id="cognitive-results" name="cognitive_test_results" required></textarea>
+                
+                <label for="sleep-patterns-fatigue">Sleep Patterns:</label>
+                <textarea id="sleep-patterns-fatigue" name="sleep_patterns" required></textarea>
+                
+                <button type="submit">Monitor Fatigue</button>
+            </form>
+        </section>
+
+        <section id="sleep-analysis">
+            <h2>Sleep and Brain Health Correlation Analysis</h2>
+            <form action="/brain-health/sleep-analysis" method="POST">
+                <label for="user-id-sleep">User ID:</label>
+                <input type="text" id="user-id-sleep" name="user_id" required>
+                
+                <label for="sleep-patterns-analysis">Sleep Patterns:</label>
+                <textarea id="sleep-patterns-analysis" name="sleep_patterns" required></textarea>
+                
+                <label for="cognitive-scores-analysis">Cognitive Test Scores:</label>
+                <textarea id="cognitive-scores-analysis" name="cognitive_test_scores" required></textarea>
+                
+                <label for="brain-health-score">Brain Health Score:</label>
+                <input type="text" id="brain-health-score" name="brain_health_score" required>
+                
+                <button type="submit">Analyze Sleep</button>
+            </form>
+        </section>
+
+        <section id="mood-tracking">
+            <h2>Mood and Cognitive Function Tracking</h2>
+            <form action="/brain-health/mood-cognitive-tracking" method="POST">
+                <label for="user-id-mood">User ID:</label>
+                <input type="text" id="user-id-mood" name="user_id" required>
+                
+                <label for="daily-mood-scores">Daily Mood Scores:</label>
+                <textarea id="daily-mood-scores" name="daily_mood_scores" required></textarea>
+                
+                <label for="cognitive-test-results-mood">Cognitive Test Results:</label>
+                <textarea id="cognitive-test-results-mood" name="cognitive_test_results" required></textarea>
+                
+                <label for="stress-levels-mood">Stress Levels:</label>
+                <textarea id="stress-levels-mood" name="stress_levels" required></textarea>
+                
+                <button type="submit">Track Mood</button>
+            </form>
+        </section>
+
+        <section id="interventions">
+            <h2>Brain Health Intervention Suggestions</h2>
+            <form action="/brain-health/interventions" method="GET">
+                <label for="user-id-intervention">User ID:</label>
+                <input type="text" id="user-id-intervention" name="user_id" required>
+                
+                <label for="brain-health-score-intervention">Brain Health Score:</label>
+                <input type="text" id="brain-health-score-intervention" name="brain_health_score" required>
+                
+                <label for="lifestyle-data">Lifestyle Data:</label>
+                <textarea id="lifestyle-data" name="lifestyle_data" required></textarea>
+                
+                <label for="stress-levels-intervention">Stress Levels:</label>
+                <textarea id="stress-levels-intervention" name="stress_levels" required></textarea>
+                
+                <button type="submit">Get Interventions</button>
+            </form>
+        </section>
+
+        <section id="decline-alerts">
+            <h2>Brain Health Decline Alerts</h2>
+            <form action="/brain-health/decline-alerts" method="GET">
+                <label for="user-id-alerts">User ID:</label>
+                <input type="text" id="user-id-alerts" name="user_id" required>
+                
+                <label for="cognitive-history">Cognitive Function History:</label>
+                <textarea id="cognitive-history" name="cognitive_function_history" required></textarea>
+                
+                <label for="brain-health-score-history">Brain Health Score History:</label>
+                <textarea id="brain-health-score-history" name
